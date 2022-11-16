@@ -9,9 +9,64 @@
 body {
     font-family: sans-serif;
 }
-
+ul {
+    list-style-type: none;
+}
 /* Utils */
 .container {
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.wdt-90 {
+    
+} 
+
+/* Header  */
+header {
+    background-color: #0084FD;
+}
+.nav-bar {
+    height: 70px;
+    color: white;
+}
+.nav-bar-left,
+.nav-bar-right {
+    width: 100%;
+    border: 1px dashed red;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-right {
+    display: none;
+}
+.nav-bar-right ul {
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 850px) {
+    .nav-bar-left .fa-solid {
+        display: none;
+    }    
+    .nav-bar-left,
+    .nav-bar-right {
+        width: 50%;
+    }
+    .nav-bar-right {
+        display: block;
+    }
+
+}
+@media screen and (min-width: 1050px) {
+    .container {
+        width: 70%;
+    }
+    
 }
