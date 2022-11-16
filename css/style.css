@@ -30,6 +30,7 @@ ul {
     padding: 10px 0;
     min-width: 200px;
     flex-basis: 100%;
+    min-height: 300px;
 }
 
 
