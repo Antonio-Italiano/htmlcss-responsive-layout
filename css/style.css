@@ -33,7 +33,6 @@ ul {
     min-height: 300px;
 }
 
-
 /* Header  */
 header {
     background-color: #0084FD;
@@ -44,7 +43,7 @@ header {
 }
 .nav-bar-left,
 .nav-bar-right {
-    width: 100%;
+    flex-basis: 100%;
     border: 1px dashed red;
     justify-content: space-between;
     align-items: center;
@@ -76,28 +75,45 @@ header {
     background-color: #9792E4;
 }
 
+/* Benefit */
+.benefit {
+    background-color: #9792E4;
+}
+.col-wdt-100 {
+    min-width: 100%;
+}
 
 
 @media screen and (min-width: 577px) {
+    .col {
+        padding: 10px;
+    }
     .demo-app .col {
         flex-basis: calc(100% / 3);
-        padding: 10px; 
+         
+    }
+    .benefit .col {
+        flex-basis: 50%;
     }
     .row {
         display: flex;
         justify-content: center;
     }
     
+    
 }
 
 
 @media screen and (min-width: 850px) {
+    .benefit .col {
+        flex-basis: calc(100% / 3);
+    }
     .nav-bar-left .fa-solid {
         display: none;
     }    
     .nav-bar-left,
     .nav-bar-right {
-        width: 50%;
+        flex-basis: 50%;
     }
     .nav-bar-right {
         display: block;
