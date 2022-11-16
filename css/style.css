@@ -21,6 +21,17 @@ ul {
 .flex {
     display: flex;
 }
+.row {
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+ 
+.col {
+    padding: 10px 0;
+    min-width: 200px;
+    flex-basis: 100%;
+}
+
 
 /* Header  */
 header {
@@ -49,14 +60,9 @@ header {
 /* Main  */
 
 /* Section Demo  */
-.row {
-    min-height: 300px;
-    margin: 30px auto;
-}
 
-.col {
-    min-height: 300px;
-    padding: 10px 0;
+.col-wdt70 {
+    min-width: calc((100% / 3) * 2);
 }
 .card {
     min-height: 300px;
@@ -64,17 +70,24 @@ header {
     border-radius: 20px;
 }
 
+/* Section Plan */
+.strategic-plan {
+    background-color: #9792E4;
+}
 
 
 
-
-
-
-
-
-
-
-
+@media screen and (min-width: 577px) {
+    .demo-app .col {
+        flex-basis: calc(100% / 3);
+        padding: 10px; 
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
 
 
 @media screen and (min-width: 850px) {
@@ -88,9 +101,12 @@ header {
     .nav-bar-right {
         display: block;
     }
+    .strategic-plan .col {
+        flex-basis: 50%;
+    }
 
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1090px) {
     .container {
         width: 70%;
     }
