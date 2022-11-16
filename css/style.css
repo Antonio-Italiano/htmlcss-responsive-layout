@@ -83,6 +83,18 @@ header {
     min-width: 100%;
 }
 
+/* Get Started */
+.get-started{
+    background-color: #9792E4;
+    flex-basis: 100%;
+}
+.get-started .col {
+    min-height: 50px;
+    border: 2px dashed black;
+    flex-basis: 70%;
+    margin: 0 auto;
+}
+
 
 @media screen and (min-width: 577px) {
     .col {
@@ -100,7 +112,9 @@ header {
         display: flex;
         justify-content: center;
     }
-    
+    .get-started .col {
+        flex-basis: 60%;
+    }
     
 }
 
@@ -122,11 +136,16 @@ header {
     .strategic-plan .col {
         flex-basis: 50%;
     }
+    .get-started .col {
+        flex-basis: 40%;
+    }
 
 }
 @media screen and (min-width: 1090px) {
     .container {
         width: 70%;
     }
-    
+    .get-started .col{
+        flex-basis: 20%;
+    }
 }
