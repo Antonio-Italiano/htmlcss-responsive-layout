@@ -92,7 +92,8 @@ header {
         flex-basis: calc(100% / 3);
          
     }
-    .benefit .col {
+    .benefit .col,
+    .about-us .col {
         flex-basis: 50%;
     }
     .row {
