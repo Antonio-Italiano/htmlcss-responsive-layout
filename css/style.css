@@ -7,12 +7,22 @@
 
 /* Generics */
 body {
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
     position: absolute;
     width: 100%;
 }
 ul {
     list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    padding: 20px 0;
+}
+img {
+    display: block;
+    width: 100%;
 }
 /* Utils */
 .container {
@@ -36,9 +46,19 @@ ul {
 }
 
 .card {
-    min-height: 300px;
     background-color: #B5DDFF;
     border-radius: 20px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #0084FD;
+}
+
+.card p{
+    line-height: 22px;
+    padding-bottom: 35px;
 }
 
 .btn {
@@ -47,6 +67,7 @@ ul {
     background-color: white;
     color: black;
 }
+
 
 /* Header  */
 header {
@@ -57,10 +78,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
 }
 header a {
     color: white;
-    text-decoration: none;
+    
 }
 header .btn a{
     color: black;
@@ -72,6 +94,7 @@ header .btn a{
 }
 .nav-bar img {
     height: 35px;
+    width: auto;
 }
 .nav-bar-left,
 .nav-bar-right {
@@ -89,19 +112,70 @@ header .btn a{
 }
 
 /* Main  */
+section {
+    padding: 20px 0;
+}
 
 /* Section Demo  */
-
-.col-wdt70 {
-    min-width: calc((100% / 3) * 2);
+.demo-app .card {
+    height: 100%;
 }
+.col-wdt70 {
+    min-width: calc(100% / 3 * 2);
+}
+.col-wdt70 a {
+    flex-basis: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+.demo-app .col-wdt70 i {
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+    color: #fff;   
+}
+.col-wdt70 .card {
+    text-align: start;
+}
+.demo-app i {
+    font-size: 60px;
+    color: #0084FD;
+    margin-top: 35px
+}
+.col-wdt70 .btn {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0084FD;
+}
+.col-wdt70 img {
+    margin-top: 40px;
+}
+
 
 
 /* Section Plan */
 .strategic-plan {
     background-color: #9792E4;
 }
-
+.fa-arrow-down-long {
+    height: 50px;
+    width: 50px;
+    background-color: #9792E4;
+    padding: 17px;
+    border-radius: 50%;
+}
+.col-up img {
+    margin-bottom: 70px;
+}
+.strategic-plan .card {
+    padding: 20px;
+    background-color: #fff;
+    height: auto;
+    
+}
 /* Benefit */
 .benefit {
     background-color: #9792E4;
@@ -137,14 +211,8 @@ footer .card {
 }
 
 
-@media screen and (min-width: 577px) {
-    .col {
-        padding: 10px;
-    }
-    .demo-app .col {
-        flex-basis: calc(100% / 3);
-         
-    }
+@media screen and (min-width: 576px) {
+
     .benefit .col,
     .about-us .col {
         flex-basis: 50%;
@@ -153,18 +221,41 @@ footer .card {
         display: flex;
         justify-content: center;
     }
+    .col {
+        padding: 10px;
+    }   
     footer .col,
     .get-started .col {
-        flex-basis: 60%;
+        flex-basis: 70%;
     }
-    
+    .demo-app .btn {
+        width: 60%;
+    }  
+    .demo-app figure {
+        width: 50%;
+    }  
+
+
 }
 
 
-@media screen and (min-width: 850px) {
-    .benefit .col {
+@media screen and (min-width: 768px) {
+     .demo-app .col {
         flex-basis: calc(100% / 3);
     }
+    .benefit .col {
+        flex-basis: calc(100% / 3);
+    }    
+    footer .col,
+    .get-started .col {
+        flex-basis: 50%;
+    } 
+   
+    
+
+
+}
+@media screen and (min-width: 992px) {
     .nav-bar-left .fa-solid {
         display: none;
     }    
@@ -175,21 +266,30 @@ footer .card {
     .nav-bar-right {
         display: block;
     }
-    .strategic-plan .col {
-        flex-basis: 50%;
+    .col-wdt70 .card{
+        display: flex;
     }
-    footer .col,
-    .get-started .col {
-        flex-basis: 50%;
-    }
-
-}
-@media screen and (min-width: 1090px) {
-    .container {
-        width: 70%;
-    }
+    .demo-app .content {
+        width: 50%;
+    }   
     footer .col,
     .get-started .col{
         flex-basis: 40%;
+    } 
+    .strategic-plan .col-down {
+        padding-top: 250px;
+    }
+    .strategic-plan .col-down .card {
+        scale: 0.8;
+        
+    }
+    .strategic-plan .col {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 70%;
     }
 }
