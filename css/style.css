@@ -176,6 +176,12 @@ section {
     height: auto;
     
 }
+/* Testimonial */
+.testimonials figure {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
 /* Benefit */
 .benefit {
     background-color: #9792E4;
