@@ -177,10 +177,32 @@ section {
     
 }
 /* Testimonial */
+.testimonials {
+    padding: 0 20px;
+} 
+.testimonials .col {
+    text-align: center;
+}
+.testimonials .card {
+    padding-top: 20px;
+    background-color: #9792E4;
+}
 .testimonials figure {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
+    background-size: cover;
+    background-position-x: center;
+    margin: 20px auto;
+}
+#testimonial-1 {
+    background-image: url(../img/testimonial1.jpg);
+}
+#testimonial-2 {
+    background-image: url(../img/testimonial2.jpg);
+}
+#testimonial-3 {
+    background-image: url(../img/testimonial3.jpg);
 }
 /* Benefit */
 .benefit {
@@ -240,6 +262,13 @@ footer .card {
     .demo-app figure {
         width: 50%;
     }  
+    .testimonials .card-content {
+        display: flex;
+        align-items: center;
+    }
+    .testimonials figure {
+        width: 100%;
+    }
 
 
 }
@@ -256,6 +285,9 @@ footer .card {
     .get-started .col {
         flex-basis: 50%;
     } 
+    .testimonials figure {
+        width: 500px;
+    }
    
     
 
