@@ -186,6 +186,7 @@ section {
     padding-top: 20px;
     background-color: #9792E4;
 }
+.about-us figure,
 .testimonials figure {
     height: 200px;
     width: 200px;
@@ -232,7 +233,39 @@ section {
     color: #fff;
     font-size: 20px;
 }
-
+/* About Us  */
+.about-us .card {
+    background-color: #fff;
+    text-align: start; 
+}
+.about-us p {
+    color: black;
+}
+.about-us figure {
+    background-image: url(../img/about.jpg);
+    margin: 0;
+}
+.about-us .btn {
+    background-color: #9792E4;
+    text-align: center;
+}
+.about-us h2 {
+    font-size: 50px;
+    color: #9792E4;
+}
+.about-us h3 {
+    padding: 30px 0;
+    font-size: 25px;
+    color: #9792E4;
+}
+.about-us a {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.about-us i {
+    margin-right: 10px;
+}
 /* Get Started */
 .get-started{
     background-color: #9792E4;
@@ -308,6 +341,9 @@ footer .card {
     } 
     .testimonials figure {
         width: 500px;
+    }
+    .about-us .card-down {
+        padding-right: 130px;
     }
    
     
