@@ -65,6 +65,7 @@ img {
     border-radius: 15px;
     background-color: white;
     color: black;
+    display: inline;
 }
 
 
@@ -190,6 +191,7 @@ section {
 .testimonials figure {
     height: 200px;
     width: 200px;
+    min-width: 200px;
     border-radius: 50%;
     background-size: cover;
     background-position-x: center;
@@ -204,6 +206,8 @@ section {
 #testimonial-3 {
     background-image: url(../img/testimonial3.jpg);
 }
+
+
 /* Benefit */
 .benefit {
     background-color: #9792E4;
@@ -219,6 +223,7 @@ section {
 }
 .benefit .card p {
     color: black;
+    margin-top: 15px;
 }
 .benefit .card a {
     color: #fff;
@@ -233,6 +238,8 @@ section {
     color: #fff;
     font-size: 20px;
 }
+
+
 /* About Us  */
 .about-us .card {
     background-color: #fff;
@@ -270,9 +277,25 @@ section {
 .get-started{
     background-color: #9792E4;
 }
+.get-started .card {
+    color: #fff;
+    background-color: transparent;
+}
+.get-started .card span {
+    color: grey; 
+}
+.get-started h3 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+.get-started h2 {
+    color: #FDC15F;
+    font-size: 50px;
+}
+.get-started p {
+    margin-top: 20px;
+}
 .get-started .col {
-    min-height: 50px;
-    border: 2px dashed black;
     flex-basis: 70%;
     margin: 0 auto;
 }
@@ -320,9 +343,6 @@ footer .card {
         display: flex;
         align-items: center;
     }
-    .testimonials figure {
-        width: 100%;
-    }
 
 
 }
@@ -339,9 +359,6 @@ footer .card {
     .get-started .col {
         flex-basis: 50%;
     } 
-    .testimonials figure {
-        width: 500px;
-    }
     .about-us .card-down {
         padding-right: 130px;
     }
